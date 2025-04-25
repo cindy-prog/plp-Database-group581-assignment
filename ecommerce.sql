@@ -91,7 +91,35 @@ CREATE TABLE product_attribute (
   attribute_type_id INT NOT NULL,
   attribute_name VARCHAR(100) NOT NULL,
   attribute_value TEXT NOT NULL,
+
+  
   FOREIGN KEY (product_id) REFERENCES product(product_id),
   FOREIGN KEY (attribute_category_id) REFERENCES attribute_category(attribute_category_id),
   FOREIGN KEY (attribute_type_id) REFERENCES attribute_type(attribute_type_id)
 );
+-- Data Flow
+    Product Creation Flow:
+
+        Admin creates a brand (if new)
+
+        Admin creates/selects categories
+
+        Admin creates product with basic info
+
+        Admin adds variations (sizes, colors)
+
+        Admin creates product items for each variation combination
+
+        Admin adds images and attributes
+
+    Order Processing Flow:
+
+        Customer selects product
+
+        System shows available variations
+
+        Customer selects specific item (product_item)
+
+        System checks inventory
+
+        Order is created with reference to the specific product_item
