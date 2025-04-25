@@ -44,14 +44,6 @@ Allow grouping and typing of dynamic product attributes.
 ### `product_attribute`
 Stores attribute values per product (e.g., material, warranty, etc.).
 
-### 1. Create the Database
-
-```sql
-CREATE DATABASE Ecommercedb;
-USE Ecommercedb;
-2. Execute the SQL Schema
-Run the provided SQL script to create all tables.
-
 ## Collaborators
 Cynthia	Mwaura
 Valery Akinyi
