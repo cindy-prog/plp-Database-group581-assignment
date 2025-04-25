@@ -41,7 +41,7 @@ Supports multiple images per product with primary flag and display order.
 ### `attribute_category` & `attribute_type`
 Allow grouping and typing of dynamic product attributes.
 
-### `product_attribute`
+### product_attribute
 Stores attribute values per product (e.g., material, warranty, etc.).
 
 # Collaborators
@@ -49,5 +49,3 @@ Cynthia	Mwaura
 Valery Akinyi
 Niver	Ngeywo
 Mahlatse Mokhabela
-
-
